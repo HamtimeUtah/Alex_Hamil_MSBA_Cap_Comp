@@ -34,9 +34,9 @@ The Model's classification will be able to help the business understand the cost
 Sensitivity - false positives (identifying customers as credit worthy that are actually risky)  
 Specificity - False negatives (identifying customers as risky that would be good candidates for financial products) 
 
-![Negative_Coef](Images/Cap_Case_Comp_Lasso_Neg_Coef.PNG)
+![Negative%Lasso%Coef](Images/Cap_Case_Comp_Lasso_Neg_Coef.PNG)
 
-![Positive_Coef](images/Cap_Case_Comp_Lasso_Pos_Coef.png)
+![Positive%Lasso%Coef](Images/Cap_Case_Comp_Lasso_Pos_Coef.PNG)
 
 Understanding these rates can help the business consider risk based pricing- where interest rates and credit amounts are adjusted for clients prone to default.
 
