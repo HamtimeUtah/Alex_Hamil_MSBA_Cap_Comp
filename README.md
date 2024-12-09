@@ -46,10 +46,8 @@ Further examining the equipemnt and processes associated with these variables wi
 * Capturing the nuances of the data by averaging multiple prediction models helped us to reduce variance and account for different aspects of the data. As you can see we were able to account for 85% of the variance in the data with our ensemble model. 
 
 ## [What I learned from the Project](#What-I-earned-from-the-Project)
-I learned the importance of developing adequate domain knowledge, importance of understanding your data and its limitations, and the importance of resilient modeling methods.  
+I learned the importance of understanding your data and its "gaps" or "completeness", being selective with the data you plan to work with, and converting data to meaningful business insights
 
-Having enough domain knowledge is crucial because it allows you to understand the real-world importance of the features and variables you are studying. This is critical for selecting important variables and effective feature engineering.  
+Only 291,782 out of 1.4 million work orders had complete "FUNCTIONAL_LOC" data, indicating incomplete datasets where some have limited predictive modeling potential.  We ended up dropping 5 Functional Area Node variables after examining the data because of the lack of detailed data and the duplication of it with the single variable FUNCTIONAL_LOC. By selecting this variable and eliminating the others it saved us valuable time and allowed us to focus on relevant predictive data.
 
-Knowing your data and its limitations is important because it allows you to adjust for important missing variables, and guard against overfit or poor ROC-AUC results. Imbalanced data can minize important details of the target variable or contributing variables.  
-
-Knowing when and how to use multiple modeling methods and the best methods for sampling the most amount of data is important. This will allow the model to account for as much variance as possible while trying to avoid overfit. 
+By examining the data and understanding the business case description, we were able to convert the lost time into a dollar/minute variable that allowed the business to understand the real world cost associated with these process inefficiences and downtime.
