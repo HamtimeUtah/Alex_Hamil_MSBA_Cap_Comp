@@ -30,15 +30,15 @@ My contributions to the Exploratory Data Analysis were the exploratory visualiza
 
 ## [Solution's Value to the Business](#Solutions-Value-to-the-Business)
 
-The Model's classification will be able to help the business understand the costs associated with   
-Sensitivity - false positives (identifying customers as credit worthy that are actually risky)  
-Specificity - False negatives (identifying customers as risky that would be good candidates for financial products) 
+The results from the lasso model are a list of coefficients with a direct of inverse correlation to “ACTUAL_WORK_IN_MINUTES”. The lasso model selected 99 coefficients that have significant impact on the target variable, and we highlighted the top ten coefficients with a negative and positive impact on the target variable.
+Negative Impact on “ACTUAL_WORK_IN_MINUTES” - increasing the amount of downtime
+Positive Impact on “ACTUAL_WORK_IN_MINUTES” - decreasing the amount of downtime
 
 ![Negative%Lasso%Coef](Images/Cap_Case_Comp_Lasso_Neg_Coef.PNG)
 
 ![Positive%Lasso%Coef](Images/Cap_Case_Comp_Lasso_Pos_Coef.PNG)
 
-Understanding these rates can help the business consider risk based pricing- where interest rates and credit amounts are adjusted for clients prone to default.
+Further examining the equipemnt and processes associated with these variables will allow Swire to pinpoint areas for optimization and potential time saving procedures already in use.
 
 ## [Challenges Our Group Faced](#Challenges-Our-Group-Faced)
 * With the overwhelming amount of data in the majority class. We found it helpful to downsample the data for this class. This helped reduce overfitting our model to the majority characteristics of customers that are capable of repayment. 
