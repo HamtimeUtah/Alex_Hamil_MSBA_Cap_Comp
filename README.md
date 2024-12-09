@@ -17,7 +17,6 @@ Extensive repairs result in lengthy downtimes that generate work orders in the I
 
 The purpose of this project is to create a model that allows Swire Coca-Cola to better understand plant machine maintenance and make predictions of costly failures before they occur.
 
-
 ## [Our Solution to the Problem](#Our-Solution-to-the-Problem)
 * Our solution to the problem started by cleaning and understanding the data and its gaps prior to model selection.
 * Next we had to decide which variables in the data we wanted to focus on and what our target variable would be. We chose ACTUAL_WORK_IN_MINUTES for our taget variable and to exclude the functional area nodes since this data is captured in the FUNCTIONAL_LOC variable.
@@ -41,9 +40,9 @@ Positive Impact on “ACTUAL_WORK_IN_MINUTES” - decreasing the amount of downt
 Further examining the equipemnt and processes associated with these variables will allow Swire to pinpoint areas for optimization and potential time saving procedures already in use.
 
 ## [Challenges Our Group Faced](#Challenges-Our-Group-Faced)
-* With the overwhelming amount of data in the majority class. We found it helpful to downsample the data for this class. This helped reduce overfitting our model to the majority characteristics of customers that are capable of repayment. 
-* The limited data available about the minority class meant that we had to resample some of the same data from this class while using various data samples from the majority class. This allowed us to use a larger sample of data and potentially capture more patterns and interactions in the data.
-* Capturing the nuances of the data by averaging multiple prediction models helped us to reduce variance and account for different aspects of the data. As you can see we were able to account for 85% of the variance in the data with our ensemble model. 
+* The majority of the data was "unplanned maintenance" activity and had limited value for creating a supervised predictive model. Due to the lack of data recorded during unplanned maintenance events, most of the insights and value in the predictive model came from the planned maintenance activities.
+* Target variable selection was critical. Some of the time series data was unreliable due to the way it was entered into the IWC work order system. Some of the timestamps indicated an unexpected maintenance event but not all were shutdowns. A work order ID could mean anything from an unexpected error that resulted in no real time lost or it could mean that the maintenance personnel only had time to enter it after completing the event and thus is not representative of the actual downtime. 
+* The nature of the time series data made using PCAs to understand the cluster grouping from our unsupervised data challenging. We couldn't use any variables that had a sequential time dependency on another event, so the unsupervised analysis had to be done with non-time series data.
 
 ## [What I learned from the Project](#What-I-earned-from-the-Project)
 I learned the importance of understanding your data and its "gaps" or "completeness", being selective with the data you plan to work with, and converting data to meaningful business insights
