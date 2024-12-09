@@ -26,7 +26,7 @@ The purpose of this project is to create a model that allows Swire Coca-Cola to 
 ## [My Contribution to the Project](#My-Contribution-to-the-Project)
 My contributions to the Exploratory Data Analysis were the exploratory visualizations and summary graphics surrounding the FUNCTIONAL_AREA_NODE locations and the results sections of the EDA analysis. For the modeling notebook I focused on the linear, lasso, and dummy regression models and summarized the supervised modeling results. I wrote a large portion of the work that we used for the business problem statement and created the slides with the business recommendations for the final presentation.
 
-![](/images/Regression%20ROC%20Curve.png)
+![]Images/Cap_Case_Comp_Func_Area_EDA.PNG
 
 ## [Solution's Value to the Business](#Solutions-Value-to-the-Business)
 
